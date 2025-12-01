@@ -1,3 +1,4 @@
 # Local development override
-docker-compose.override.yml
 .claude
+docker-compose.override.yml
+nginx.override.conf
