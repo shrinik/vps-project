@@ -2,6 +2,5 @@
 .claude
 docker-compose.override.yml
 nginx.override.conf
-my-blog/public
 my-blog/.hugo_build.lock
 html/
