@@ -3,7 +3,5 @@ title = 'Home'
 date = 2023-01-01T08:00:00-07:00
 draft = false
 +++
-## This is for the home page
-Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
-pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
-excepteur excepteur pariatur nostrud qui irure ullamco.
+## Shrinivas Kudva's Blog
+Hi. I am Shrinivas Kudva, a passionate software developer working in a software products company. I write about my personal journey in professional software development and  learning.

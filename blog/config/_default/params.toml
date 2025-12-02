@@ -1,10 +1,10 @@
 [homepage]
-  onlyPostsInHomePage = false
+  onlyPostsInHomePage = true
   homePageLogo=true
-  homePageTitle="JOHN DOE"
+  homePageTitle="Shrinivas Kudva"
   homePageTagLine="Welcome to my website"
   homePageLogoPath='images/avatar.png'
-  homePageAbout="Hi! I'm John Doe, a passionate blogger and portfolio creator. Explore my latest posts and projects here."
+  homePageAbout="Hi! I'm Shrinivas Kudva, a passionate techie. I write about practical software engineering based on professional work and learning."
  
   homePageCoverPath='images/img_forest.jpg'
   homePageCoverTitle="Welcome to our blog and portfolio."
@@ -12,7 +12,7 @@
   homePageSummaryLength=500
   homePagePostDate=false        
   dateFormat= "2 Jan 2006"
-  showSocialLinksHome=true
+  showSocialLinksHome=false
 
 [fonts]
   siteFont="Georgia, UnifrakturMaguntia, serif"
@@ -24,7 +24,7 @@
   linkedin = 'https://linkedin.com/in/yourprofile'
   youtube = 'https://youtube.com/@yourchannel'
   tiktok = 'https://tiktok.com/@yourhandle'
-  github = 'https://github.com/yourusername'
+  github = 'https://github.com/shrinik'
   reddit = 'https://reddit.com/u/yourusername'
   pinterest = 'https://pinterest.com/yourhandle'
   snapchat = 'https://snapchat.com/add/yourhandle'
