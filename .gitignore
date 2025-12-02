@@ -3,3 +3,5 @@
 docker-compose.override.yml
 nginx.override.conf
 blog/public
+blog/.hugo_build.lock
+html/
