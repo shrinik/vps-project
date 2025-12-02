@@ -1,3 +1,4 @@
-[submodule "blog/themes/sans"]
-	path = blog/themes/sans
+
+[submodule "my-blog/themes/sans"]
+	path = my-blog/themes/sans
 	url = https://github.com/psugam/sans
