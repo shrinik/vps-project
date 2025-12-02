@@ -1,18 +1,6 @@
 [homepage]
   onlyPostsInHomePage = true
-  homePageLogo=true
-  homePageTitle="Shrinivas Kudva"
-  homePageTagLine="Welcome to my website"
-  homePageLogoPath='images/avatar.png'
-  homePageAbout="Hi! I'm Shrinivas Kudva, a passionate techie. I write about practical software engineering based on professional work and learning."
- 
-  homePageCoverPath='images/img_forest.jpg'
-  homePageCoverTitle="Welcome to our blog and portfolio."
-  homePageCoverTagLine="Discover insights, stories, and ideas that inspire. Join our community of readers exploring the latest trends and timeless wisdom.SUGAM"
-  homePageSummaryLength=500
-  homePagePostDate=false        
   dateFormat= "2 Jan 2006"
-  showSocialLinksHome=false
 
 [fonts]
   siteFont="Georgia, UnifrakturMaguntia, serif"

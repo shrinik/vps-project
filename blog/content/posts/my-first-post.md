@@ -1,11 +1,11 @@
 +++
-date = '2025-12-02T18:07:33+05:45'
+date = '2025-12-02'
 draft = false
-title = 'First Post'
+title = 'Fullstack Journey'
 authors=['Shrinivas Kudva']
 toc=true
 +++
 
-# Hello World
+## The Plan
 
-This is my first Hugo post
+Skill up on fullstack using a comprehensive production grade environment.

@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = 'en-us'
-title = 'SANS'
+title = 'Shrini Tech Blog'
 theme = 'sans'
 publishDir = "public"
 
