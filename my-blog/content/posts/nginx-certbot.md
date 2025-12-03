@@ -13,6 +13,7 @@ I use a cloud server running nginx to serve my web applications including this b
 - **TLS certificate** - Digital file that proves a website's identity to TLS.
 - **Certbot** - An open-source tool to automate the process of obtaining and renewing free TLS certificates from Let's Encrypt.
 - **Let's Encrypt** - Let's Encrypt is a Certificate Authority that provides free TLS certificates.
+- **ACME** - Automatic Certificate Management Environment is a protocol for automating the process for obtaining/renewing TLS certificates
 
 ## Assumptions
  - You are running nginx on ubuntu linux
@@ -42,6 +43,8 @@ The `/var/www/certbot` directory is mapped to a specific URL path that is used b
 Basically, Certbot will generate and store a token in this directory and navigate to your domain using the domain name and above path. 
 
 If the token retrieved from the navigation matches the one generated on the web server, it verifies that the web server owns the domain and hence can be issued a TLS certificate for that domain.
+
+Note that the redirect block must be wrapped in a location block else it will run before any location block and redirect everything including the ACME challenge which will cause the Hugo html page to be served.
 ```nginx
 server {
     listen 80;
@@ -51,7 +54,10 @@ server {
         root /var/www/certbot;
     }
     
-    return 301 https://$host$request_uri;
+    # Redirect all OTHER requests to HTTPS
+    location / {
+        return 301 https://$host$request_uri;
+    }
 }
 ```
 
