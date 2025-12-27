@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = 'en-us'
-title = 'Shrinivas Kudva Tech Blog'
+title = "Shrinivas Kudva's Tech Blog"
 theme = 'sans'
 publishDir = "public"
 
