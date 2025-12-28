@@ -1,7 +1,7 @@
 +++
 date = '2025-12-27T19:55:33+05:30'
 draft = false
-title = 'Using Hugo'
+title = 'Blogging using Hugo'
 +++
 
 ## Background
@@ -62,8 +62,10 @@ hugo
 ```
 **Note:** Make sure `draft = false` in your post's front matter before building, otherwise the post won't be included in the build output.
 
-I will create a separate post on how I serve my blog using nginx and the build output in the `public` directory soon. Until then, happy blogging!
+Copy the contents of the public folder to your web server (nginx, AWS S3 bucket, etc.) every time you publish a new post.
+
+I will create a post on how I serve my blog using nginx and the build output in the `public` directory soon. Until then, happy blogging!
 
 ## References
-1. This [site](https://www.markdownguide.org/basic-syntax/) is very helpful for learning basic Markdown syntax.
-2. You can refer to Hugo's getting started site [here](https://gohugo.io/getting-started/usage/) for more details.
+1. Check out the [Markdown Guide](https://www.markdownguide.org/basic-syntax/) to learn basic Markdown syntax.
+2. See Hugo's [Getting Started](https://gohugo.io/getting-started/usage/) guide for more information.

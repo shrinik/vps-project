@@ -1,5 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Shrinivas Kudva's Tech Blog</title><link>/</link><description>Recent content in Home on Shrinivas Kudva's Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 27 Dec 2025 19:55:33 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Using Hugo</title><link>/2025/12/using-hugo/</link><pubDate>Sat, 27 Dec 2025 19:55:33 +0530</pubDate><guid>/2025/12/using-hugo/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on Shrinivas Kudva's Tech Blog</title><link>/</link><description>Recent content in Home on Shrinivas Kudva's Tech Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 27 Dec 2025 19:55:33 +0530</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Blogging using Hugo</title><link>/2025/12/blogging-using-hugo/</link><pubDate>Sat, 27 Dec 2025 19:55:33 +0530</pubDate><guid>/2025/12/blogging-using-hugo/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
 &lt;p&gt;I recently started using Hugo, a fast and flexible static site generator, to publish the blog you&amp;rsquo;re reading. I&amp;rsquo;ve captured some useful commands in this post to serve as a quick reference for myself and others getting started with Hugo.&lt;/p&gt;
 &lt;h2 id="installing-hugo"&gt;Installing Hugo&lt;/h2&gt;
-&lt;p&gt;On Linux, enter the command below to install Hugo.&lt;/p&gt;</description></item><item><title>Auto-Renewing Let's Encrypt Certificates for nginx with Certbot Webroot</title><link>/2025/12/auto-renewing-lets-encrypt-certificates-for-nginx-with-certbot-webroot/</link><pubDate>Wed, 03 Dec 2025 18:13:57 +0000</pubDate><guid>/2025/12/auto-renewing-lets-encrypt-certificates-for-nginx-with-certbot-webroot/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
-&lt;p&gt;I use a cloud server running nginx to serve my web applications including this blog. I use docker compose to run the nginx container on my web server. To serve the site securely, I used Certbot to issue a TLS certificate for my domain. This post captures the steps and learning.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;On Linux, enter the command below to install Hugo.&lt;/p&gt;</description></item><item><title>Automate TLS Certificate Renewal for nginx with Certbot</title><link>/2025/12/automate-tls-certificate-renewal-for-nginx-with-certbot/</link><pubDate>Wed, 03 Dec 2025 18:13:57 +0000</pubDate><guid>/2025/12/automate-tls-certificate-renewal-for-nginx-with-certbot/</guid><description>&lt;h2 id="background"&gt;Background&lt;/h2&gt;
+&lt;p&gt;I run nginx in a Docker container on a cloud server to serve my web applications. Using Certbot, I issued a TLS certificate from Let&amp;rsquo;s Encrypt for my domain. Since these certificates expire after 90 days, I set up automatic renewal with Certbot — here&amp;rsquo;s how.&lt;/p&gt;
+&lt;h2 id="glossary"&gt;Glossary&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;nginx&lt;/strong&gt; - A high performance web server software.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TLS&lt;/strong&gt; - Transport Layer Security is a cryptographic protocol for secure communication over the internet.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TLS certificate&lt;/strong&gt; - Digital file that proves a website&amp;rsquo;s identity to TLS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certbot&lt;/strong&gt; - An open-source tool to automate the process of obtaining and renewing free TLS certificates from Let&amp;rsquo;s Encrypt.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Let&amp;rsquo;s Encrypt&lt;/strong&gt; - Let&amp;rsquo;s Encrypt is a Certificate Authority that provides free TLS certificates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ACME&lt;/strong&gt; - Automatic Certificate Management Environment is a protocol for automating the process for obtaining/renewing TLS certificates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="assumptions"&gt;Assumptions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;You are running nginx on ubuntu linux&lt;/li&gt;
+&lt;li&gt;You are using docker-compose to run nginx&lt;/li&gt;
+&lt;li&gt;You are logged in as root. If not, prefix &amp;ldquo;sudo&amp;rdquo; to all commands&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="why"&gt;Why&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s Encrypt certificates are valid only for 90 days so it is essential to setup an automated mechanism to renew the certificate in order to keep the site secure and accessible.&lt;/p&gt;</description></item></channel></rss>

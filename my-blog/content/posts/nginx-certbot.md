@@ -1,11 +1,11 @@
 +++
 date = '2025-12-03T18:13:57Z'
 draft = false
-title = "Auto-Renewing Let's Encrypt Certificates for nginx with Certbot Webroot"
+title = "Automate TLS Certificate Renewal for nginx with Certbot"
 +++
 
 ## Background
-I use a cloud server running nginx to serve my web applications including this blog. I use docker compose to run the nginx container on my web server. To serve the site securely, I used Certbot to issue a TLS certificate for my domain. This post captures the steps and learning.
+I run nginx in a Docker container on a cloud server to serve my web applications. Using Certbot, I issued a TLS certificate from Let's Encrypt for my domain. Since these certificates expire after 90 days, I set up automatic renewal with Certbot — here's how.
 
 ## Glossary
 - **nginx** - A high performance web server software.
