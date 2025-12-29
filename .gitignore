@@ -1,7 +1,9 @@
 # Local development override
 .claude
-docker-compose.override.yml
-nginx.override.conf
 my-blog/.hugo_build.lock
 html/
 .env
+
+# Override the files in root directory but not the copies in local-conf folder
+/docker-compose.override.yml
+/nginx.override.conf
