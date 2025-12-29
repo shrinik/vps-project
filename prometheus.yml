@@ -21,3 +21,9 @@ scrape_configs:
   - job_name: 'nginx'
     static_configs:
       - targets: ["nginx-exporter:9113"]
+
+  # Scrape host system metrics
+  - job_name: node
+    metrics_path: "/metrics"  # Node Exporter's metrics endpoint
+    static_configs:
+    - targets: ['172.17.0.1:9100']
