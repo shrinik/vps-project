@@ -4,3 +4,4 @@ docker-compose.override.yml
 nginx.override.conf
 my-blog/.hugo_build.lock
 html/
+.env
