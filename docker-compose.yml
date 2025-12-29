@@ -18,7 +18,7 @@ services:
     ports:
       - "9113:9113"
     command:
-      - --nginx.scrape-uri=http://nginx/nginx_status
+      - --nginx.scrape-uri=http://nginx:81/nginx_status
     depends_on:
       - nginx
     networks:
