@@ -11,7 +11,7 @@ services:
       - /var/www/certbot:/var/www/certbot:ro
     networks:
       - monitoring
-    restart: unless-stopped
+    restart: on-failure:5
 
   nginx-exporter:
     image: nginx/nginx-prometheus-exporter:1.5.1
@@ -23,7 +23,6 @@ services:
       - nginx
     networks:
       - monitoring
-    restart: unless-stopped
 
   loki:
     image: grafana/loki
